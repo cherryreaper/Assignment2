@@ -59,4 +59,9 @@ function setup() {
 
 ![image](https://github.com/user-attachments/assets/42f593c7-8502-4368-9c56-f6dc0db1fd55)
 
+Here is the result when I halve the size of the triangles:
+
+![image](https://github.com/user-attachments/assets/d00afe5e-dcff-4fa9-8afc-52d493a09c14)
+
+
 
