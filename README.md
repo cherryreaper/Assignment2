@@ -57,3 +57,9 @@ function setup() {
 ```
 ![image](https://github.com/user-attachments/assets/5094f8d3-906e-40de-8b0d-d99dc7560f1c)
 
+
+Slight CHange: add ``stroke(0, current_color, current_color); `` under fill
+
+![image](https://github.com/user-attachments/assets/42f593c7-8502-4368-9c56-f6dc0db1fd55)
+
+
