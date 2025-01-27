@@ -5,7 +5,9 @@ For this assignment, you will create a set of instructions and then realize them
 
 ## Deliverables
 1. Overview: a traingle-based background that fades from blue blue with a pucture of a bat drawn over it.
-   a. Create an ombre background made of triangles. THe traingles should start blue, with each triangle becoming subsequently redder. The ombre should fade left to right then up and down.
+
+    a. Create an ombre background made of triangles. THe traingles should start blue, with each triangle becoming subsequently redder. The ombre should fade left to right then up and down.
+ 
    b. A bat should be drawn over this background. The bat will have a line of symmetry in the middle, and should be made up of the same triangles that the background is. 
 3. Program
 ```
@@ -98,7 +100,7 @@ function setup() {
 ![image](https://github.com/user-attachments/assets/19eacb62-56d9-4e30-b20d-b3d02d500719)
 
 
-##Bonus
+## Bonus
 After this, I wanted to generate a random series of colors that could fade between one another, which I did by using a random to add or subtract 20 from each color every time I called the program, which created my desire result.
 ![image](https://github.com/user-attachments/assets/6e9c4814-c407-4917-ad98-46e5fa56896c)
 
