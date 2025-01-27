@@ -56,11 +56,22 @@ function setup() {
 }
 ```
 
-![image](https://github.com/user-attachments/assets/42f593c7-8502-4368-9c56-f6dc0db1fd55)
-
-Here is the result when I halve the size of the triangles:
 
 ![image](https://github.com/user-attachments/assets/d00afe5e-dcff-4fa9-8afc-52d493a09c14)
+
+Here is a fun mixed version where the colors of the strokes are a random value between white and black
+![image](https://github.com/user-attachments/assets/ef7f4d9a-1d6f-4a3a-af6c-4bef24c5542c)
+
+
+
+##Bonus
+After this, I wanted to generate a random series of colors that could fade between one another, which I did by using a random to add or subtract 20 from each color every time I called the program, which created my desire result.
+![image](https://github.com/user-attachments/assets/6e9c4814-c407-4917-ad98-46e5fa56896c)
+
+Not allowing color 3 to change genertaed more visually pleasing results, as the colors remained within the bounds of just red and green, with blue remaining the same
+
+![image](https://github.com/user-attachments/assets/074c8850-27b4-48ba-856a-3e58b6ee7db0)
+![image](https://github.com/user-attachments/assets/5680d95a-f188-41ef-82d1-7e88d0a353b3)
 
 
 
