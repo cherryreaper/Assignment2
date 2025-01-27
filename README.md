@@ -4,28 +4,66 @@
 For this assignment, you will create a set of instructions and then realize them in p5.js. Your goal is to both create something that is aesthetically interesting to you, and where your audience can potentially see the underlying instructions.
 
 ## Deliverables
-1. I would like the program to create a series of triangles that fade from blue to red in an ombre fashion. The triangles should be small and fill the entire screen, each subsequent triangle slighlty redder than the last. In addition, the lines o fthe triagnle will blend in with the blue parts, but become more apparent when fading to red. The ombbre will happen left to right, then up and down.
-2. Program
+1. Overview: a traingle-based background that fades from blue blue with a pucture of a bat drawn over it.
+   a. Create an ombre background made of triangles. THe traingles should start blue, with each triangle becoming subsequently redder. The ombre should fade left to right then up and down.
+   b. A bat should be drawn over this background. The bat will have a line of symmetry in the middle, and should be made up of the same triangles that the background is. 
+3. Program
 ```
 function setup() {
   createCanvas(400, 400);
   rect (0, 0, 400, 400);
   n = 10
   
-  x1 = -20;
-  y1 = 40;
+  x1 = -10;
+  y1 = 20;
   x2 = 0;
   y2 = 0;
-  x3 = 20;
-  y3 = 40;
+  x3 = 10;
+  y3 = 20;
   reflection = true;
   current_color = 250
-  for (let i = 0; i < 10; i += 1) { 
-    for (let j = 0; j < 21; j += 1) 
+  
+  batListColumn = 
+    [4,4,
+     5,5,5,5,5,5,5,5,
+     6,6,6,6,6,6,6,6,6,6,
+     7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,
+     8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+     9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,
+     10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,
+     11,11,11,11,11,11,11,11,11,11,11,11,11,
+     12,12,12,12,12,
+     13
+    ]
+  batListRow = 
+    [8,32,//4
+     6,7,8,9,31,32,33,34,//5
+     7,8,9,10,18,22,30,31,32,33,//6
+     6,7,8,9,10,11,18,19,20,21,22,29,30,31,32,33,34,//7
+     6,7,8,9,10,11,12,13,14,19, 20, 21,26,27,28,29,30,31,32,33,34,//8
+     9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,//9
+     9,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,31,//10
+     12,15,16,17,18,19,20,21,22,23,24,25,28,//11
+     17,19,20,21,23,//12
+     20//13
+     ]
+  index = 0
+  //Grey ombre
+  for (let i = 0; i < 20; i += 1) { 
+    for (let j = 0; j < 41; j += 1) 
     { 
-      fill(80, current_color-10, current_color);
+      let colorFill = random(250)
+      if (i==batListColumn[index] && j==batListRow[index])
+      {
+        fill("black");
+        index++;
+      }
+      else{
+      fill(80, current_color-10, current_color); 
+      }
       stroke(0, current_color, current_color);
       triangle(x1, y1, x2, y2, x3, y3);
+      
       
       x1 = x2
       y1 = y2
@@ -33,35 +71,31 @@ function setup() {
       y2 = y3
       if (reflection)
         {
-          y3 = y3 - 40
+          y3 = y3 - 20
           reflection = false
         }
       else
         {
-          y3 = y3 + 40
+          y3 = y3 + 20
           reflection = true
         }
-      x3 = x3 + 20
-      current_color = current_color - 1.2;
+      x3 = x3 + 10
+      current_color = current_color - .29;
       n--;
       fill(255, 255, 0); 
     }
-    x1 = -20;
+    x1 = -10;
     x2 = 0;
-    x3 = 20;
-    y1 = y1 + 40;
-    y2 = y2 + 40;
-    y3 = y3 + 40;
+    x3 = 10;
+    y1 = y1 + 20;
+    y2 = y2 + 20;
+    y3 = y3 + 20;
   }
 }
 ```
 
 
-![image](https://github.com/user-attachments/assets/d00afe5e-dcff-4fa9-8afc-52d493a09c14)
-
-Here is a fun mixed version where the colors of the strokes are a random value between white and black
-![image](https://github.com/user-attachments/assets/ef7f4d9a-1d6f-4a3a-af6c-4bef24c5542c)
-
+![image](https://github.com/user-attachments/assets/19eacb62-56d9-4e30-b20d-b3d02d500719)
 
 
 ##Bonus
