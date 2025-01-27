@@ -8,7 +8,7 @@ For this assignment, you will create a set of instructions and then realize them
 
     a. Create an ombre background made of triangles. THe traingles should start blue, with each triangle becoming subsequently redder. The ombre should fade left to right then up and down.
  
-   b. A bat should be drawn over this background. The bat will have a line of symmetry in the middle, and should be made up of the same triangles that the background is. 
+   b. A bat should be drawn over this background. The bat will have a line of symmetry in the middle, and should be made up of the same triangles that the background is, like triangle-based pixel art.
 3. Program
 ```
 function setup() {
