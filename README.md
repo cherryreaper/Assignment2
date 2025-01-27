@@ -4,7 +4,7 @@
 For this assignment, you will create a set of instructions and then realize them in p5.js. Your goal is to both create something that is aesthetically interesting to you, and where your audience can potentially see the underlying instructions.
 
 ## Deliverables
-1. I would like the program to create a series of triangles that fade from blue to red in an ombre fashion. The triangles should be small and fill the entire screen, each subsequent triangle slighlty redder than the last
+1. I would like the program to create a series of triangles that fade from blue to red in an ombre fashion. The triangles should be small and fill the entire screen, each subsequent triangle slighlty redder than the last. In addition, the lines o fthe triagnle will blend in with the blue parts, but become more apparent when fading to red. The ombbre will happen left to right, then up and down.
 2. Program
 ```
 function setup() {
@@ -24,7 +24,8 @@ function setup() {
   for (let i = 0; i < 10; i += 1) { 
     for (let j = 0; j < 21; j += 1) 
     { 
-      fill(80, current_color-10, current_color); 
+      fill(80, current_color-10, current_color);
+      stroke(0, current_color, current_color);
       triangle(x1, y1, x2, y2, x3, y3);
       
       x1 = x2
@@ -55,10 +56,6 @@ function setup() {
   }
 }
 ```
-![image](https://github.com/user-attachments/assets/5094f8d3-906e-40de-8b0d-d99dc7560f1c)
-
-
-Slight CHange: add ``stroke(0, current_color, current_color); `` under fill
 
 ![image](https://github.com/user-attachments/assets/42f593c7-8502-4368-9c56-f6dc0db1fd55)
 
