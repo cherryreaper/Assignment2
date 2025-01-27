@@ -20,7 +20,6 @@ function setup() {
   y3 = 40;
   reflection = true;
   current_color = 250
-  //Grey ombre
   for (let i = 0; i < 10; i += 1) { 
     for (let j = 0; j < 21; j += 1) 
     { 
