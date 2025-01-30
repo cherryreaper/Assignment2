@@ -1,5 +1,5 @@
 # IMGD 5010 - Assignment 2
-## Ombre Color
+## Bat Picture
 
 For this assignment, you will create a set of instructions and then realize them in p5.js. Your goal is to both create something that is aesthetically interesting to you, and where your audience can potentially see the underlying instructions.
 
@@ -50,7 +50,7 @@ function setup() {
      20//13
      ]
   index = 0
-  //Grey ombre
+  //ombre
   for (let i = 0; i < 20; i += 1) { 
     for (let j = 0; j < 41; j += 1) 
     { 
